@@ -184,6 +184,8 @@
 ══════════════════════════════ -->
 <section class="about-section">
   <div class="container about-inner">
+
+    <!-- Left: Text -->
     <div class="about-text reveal-left">
       <span class="section-eyebrow">About Us</span>
       <h2>Dentistry that puts <em>you first</em></h2>
@@ -197,25 +199,82 @@
       </div>
       <a class="btn btn-ghost" href="about.html">Learn More About Us</a>
     </div>
+
+    <!-- Right: Doctor Lead Card -->
     <div class="about-visual reveal-right">
-      <!--
-        📌 REPLACE DOCTOR IMAGE:
-           Change src="images/doc-malyn-2.jpg" to your photo path
-      -->
-      <div class="about-image-wrap">
-        <img src="images/doc-malyn-2.jpg"
-             alt="Dr. Malyn Denal — NewSmile Lead Dentist"
-             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-        <div class="about-image-fallback">
-          <span class="fallback-icon">👩‍⚕️</span>
-          <p>Dr. Malyn Denal<br>Lead Dentist</p>
+      <div class="doctor-card">
+
+        <!-- Decorative background blobs -->
+        <div class="doctor-card-blob blob-1"></div>
+        <div class="doctor-card-blob blob-2"></div>
+
+        <!-- Photo -->
+        <div class="doctor-photo-wrap">
+          <!--
+            📌 REPLACE DOCTOR IMAGE:
+               Change src="images/doc-malyn-2.jpg" to your photo path
+          -->
+          <img src="images/doc-malyn-2.jpg"
+               alt="Dr. Malyn Denal"
+               class="doctor-photo"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="doctor-photo-placeholder">🦷</div>
+
+          <!-- Verified badge on photo -->
+          <div class="doctor-verified">
+            <span>✓</span> Verified
+          </div>
         </div>
-      </div>
-      <div class="about-float-card">
-        <span class="num" data-target="97.88" data-suffix="%" data-decimals="2">97.88%</span>
-        <p>Patient Satisfaction<br>Rate in 2025</p>
-      </div>
+
+        <!-- Info -->
+        <div class="doctor-info">
+          <h3 class="doctor-name">Dr. Malyn Denal</h3>
+          <p class="doctor-title">Lead Dentist &amp; Clinic Owner</p>
+
+          <!-- Divider line -->
+          <div class="doctor-divider"></div>
+
+          <!-- Quick stats row -->
+          <div class="doctor-stats-row">
+            <div class="doctor-stat-item">
+              <strong data-target="10" data-suffix="+">10+</strong>
+              <span>Yrs Exp.</span>
+            </div>
+            <div class="doctor-stat-sep"></div>
+            <div class="doctor-stat-item">
+              <strong data-target="1000" data-suffix="+">1K+</strong>
+              <span>Patients</span>
+            </div>
+            <div class="doctor-stat-sep"></div>
+            <div class="doctor-stat-item">
+              <strong>5 ★</strong>
+              <span>Rating</span>
+            </div>
+          </div>
+
+          <!-- Specialties -->
+          <div class="doctor-tags">
+            <span class="doctor-tag-item">Orthodontics</span>
+            <span class="doctor-tag-item">Cosmetic</span>
+            <span class="doctor-tag-item">Restorative</span>
+            <span class="doctor-tag-item">Pediatric</span>
+          </div>
+
+          <!-- CTA -->
+          <a class="btn btn-sm" href="appointment.html" style="width:100%;justify-content:center;margin-top:.5rem;">
+            Book with Dr. Malyn
+          </a>
+        </div>
+
+        <!-- Floating satisfaction badge -->
+        <div class="about-float-card">
+          <span class="num" data-target="97.88" data-suffix="%" data-decimals="2">97.88%</span>
+          <p>Patient Satisfaction</p>
+        </div>
+
+      </div><!-- /.doctor-card -->
     </div>
+
   </div>
 </section>
 
