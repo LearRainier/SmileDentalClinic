@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NewSmile Dental Clinic — General Trias, Cavite</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+<button class="darkmode" onclick="myFunction()">🌙</button>
+
+<!-- ══════════════════════════════
+     SCROLL PROGRESS BAR
+══════════════════════════════ -->
+<div id="scroll-progress"></div>
+
+<!-- ══════════════════════════════
+     HEADER / NAV
+══════════════════════════════ -->
+<header>
+  <div class="container nav-container">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/title-logo.png" alt="NewSmile Dental Clinic">
+      </a>
+    </div>
+    <nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <a href="services.html">Services ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="services.html#braces">Braces</a></li>
+            <li><a href="services.html#crowns">Crown &amp; Bridges</a></li>
+            <li><a href="services.html#whitening">Whitening</a></li>
+            <li><a href="services.html#fillings">Fillings</a></li>
+            <li><a href="services.html#cleaning">Cleaning</a></li>
+            <li><a href="services.html#extraction">Extractions</a></li>
+            <li><a href="services.html#surgery">Dental Surgery</a></li>
+            <li><a href="services.html#dentures">Dentures</a></li>
+            <li><a href="services.html#rootcanal">Root Canal</a></li>
+            <li><a href="services.html#implants">Implants</a></li>
+            <li><a href="services.html#pediatric">Pediatric Dentistry</a></li>
+            <li><a href="services.html#xray">Dental X-ray</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="Login.html">Login</a></li>
+      </ul>
+    </nav>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/NewSmilePH" target="_blank">
+        <img src="images/icons/facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com" target="_blank">
+        <img src="images/icons/instagram.svg" alt="Instagram">
+      </a>
+    </div>
+  </div>
+</header>
+
+
+<!-- ══════════════════════════════════════════════════════
+     PARALLAX SECTION 1 — HERO
+     📌 REPLACE IMAGE: change url("images/YOUR_HERO_IMAGE.jpg")
+        inside the .parallax-hero rule in css/style.css
+══════════════════════════════════════════════════════ -->
+<section class="parallax-hero">
+  <!-- Dark overlay so text stays readable -->
+  <div class="parallax-overlay"></div>
+
+  <!-- Floating particles -->
+  <div class="hero-particles">
+    <span class="particle"></span><span class="particle"></span>
+    <span class="particle"></span><span class="particle"></span>
+    <span class="particle"></span><span class="particle"></span>
+  </div>
+
+  <!-- Hero content -->
+  <div class="container hero-content">
+    <span class="hero-tag">General Trias, Cavite &middot; Est. 2020</span>
+    <h1>Your Healthy<br><span class="highlight">Smile Matters</span></h1>
+    <p>Modern dental care delivered with compassion — from routine check-ups to complete smile transformations. We make every visit comfortable and every smile confident.</p>
+    <div class="hero-actions">
+      <a class="btn" href="appointment.html">Book Appointment</a>
+      <a class="btn btn-outline" href="services.html">Our Services</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <strong data-target="1000" data-suffix="+">1000+</strong>
+        <span>Patients Per Year</span>
+      </div>
+      <div class="hero-stat">
+        <strong data-target="97.88" data-suffix="%" data-decimals="2">97.88%</strong>
+        <span>Satisfaction Rate</span>
+      </div>
+      <div class="hero-stat">
+        <strong data-target="2">2</strong>
+        <span>Clinic Locations</span>
+      </div>
+      <div class="hero-stat">
+        <strong data-target="5">5</strong>
+        <span>Expert Dentists</span>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+
+<!-- ══════════════════════════════
+     WHY CHOOSE US
+══════════════════════════════ -->
+<section class="features-section">
+  <div class="container">
+    <div class="section-header center">
+      <span class="section-eyebrow reveal">Why Choose Us</span>
+      <h2 class="section-title reveal delay-1">Care you can <em>trust</em></h2>
+      <p class="section-sub reveal delay-2">We combine the latest dental technology with genuine compassion for an experience unlike any other clinic.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature reveal delay-1">
+        <div class="feature-icon">🦷</div>
+        <h3>Quality Service</h3>
+        <p>We provide excellent treatment at reasonable prices, ensuring you get the best of both worlds — precision and affordability.</p>
+      </div>
+      <div class="feature reveal delay-2">
+        <div class="feature-icon">💎</div>
+        <h3>Affordable Rates</h3>
+        <p>Transparent pricing with no hidden fees. Premium dental care made accessible to every patient and family.</p>
+      </div>
+      <div class="feature reveal delay-3">
+        <div class="feature-icon">❤️</div>
+        <h3>Patient-First Care</h3>
+        <p>Your comfort and well-being come first. From the moment you walk in to the moment you leave, we're here for you.</p>
+      </div>
+      <div class="feature reveal delay-4">
+        <div class="feature-icon">🔬</div>
+        <h3>Modern Technology</h3>
+        <p>We invest in the latest dental equipment so every procedure is as precise, safe, and effective as possible.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════
+     PARALLAX SECTION 2 — STATISTICS BANNER
+     📌 REPLACE IMAGE: change url("images/YOUR_STATS_BG.jpg")
+        inside the .parallax-stats rule in css/style.css
+══════════════════════════════════════════════════════ -->
+<section class="parallax-stats">
+  <div class="parallax-overlay overlay-dark"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="stats-grid">
+      <div class="stats-card reveal">
+        <h2 data-target="1000" data-suffix="+">1000+</h2>
+        <p>Patients per year</p>
+      </div>
+      <div class="stats-card reveal delay-1">
+        <h2 data-target="5">5</h2>
+        <p>Qualified dentists</p>
+      </div>
+      <div class="stats-card reveal delay-2">
+        <h2 data-target="97.88" data-suffix="%" data-decimals="2">97.88%</h2>
+        <p>Satisfaction rate</p>
+      </div>
+      <div class="stats-card reveal delay-3">
+        <h2 data-target="2">2</h2>
+        <p>Clinic locations</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════
+     ABOUT
+══════════════════════════════ -->
+<section class="about-section">
+  <div class="container about-inner">
+    <div class="about-text reveal-left">
+      <span class="section-eyebrow">About Us</span>
+      <h2>Dentistry that puts <em>you first</em></h2>
+      <p>Our business is rooted in providing services that are both affordable and of exceptional quality. We pride ourselves on being hospitable, courteous, and conveniently positioned close to our community.</p>
+      <p>From routine cleanings to complex restorations, our experienced team uses the greatest tools and materials to ensure every treatment meets and surpasses your expectations.</p>
+      <div class="about-badges">
+        <span class="badge">✓ Licensed Dentists</span>
+        <span class="badge blue">✓ Modern Equipment</span>
+        <span class="badge">✓ Friendly Environment</span>
+        <span class="badge blue">✓ Mon–Sat 9am–5pm</span>
+      </div>
+      <a class="btn btn-ghost" href="about.html">Learn More About Us</a>
+    </div>
+    <div class="about-visual reveal-right">
+      <!--
+        📌 REPLACE DOCTOR IMAGE:
+           Change src="images/doc-malyn-2.jpg" to your photo path
+      -->
+      <div class="about-image-wrap">
+        <img src="images/doc-malyn-2.jpg"
+             alt="Dr. Malyn Denal — NewSmile Lead Dentist"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="about-image-fallback">
+          <span class="fallback-icon">👩‍⚕️</span>
+          <p>Dr. Malyn Denal<br>Lead Dentist</p>
+        </div>
+      </div>
+      <div class="about-float-card">
+        <span class="num" data-target="97.88" data-suffix="%" data-decimals="2">97.88%</span>
+        <p>Patient Satisfaction<br>Rate in 2025</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════
+     PARALLAX SECTION 3 — QUOTE / MID BANNER
+     📌 REPLACE IMAGE: change url("images/YOUR_QUOTE_BG.jpg")
+        inside the .parallax-quote rule in css/style.css
+══════════════════════════════════════════════════════ -->
+<section class="parallax-quote">
+  <div class="parallax-overlay overlay-green"></div>
+  <div class="container parallax-quote-content reveal">
+    <span class="quote-icon">❝</span>
+    <blockquote>Your smile is our greatest reward. We are committed to delivering care that goes beyond treatment — it's about building trust, one smile at a time.</blockquote>
+    <cite>— Dr. Malyn Denal, Lead Dentist</cite>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════
+     PATIENT REVIEWS
+══════════════════════════════ -->
+<section class="reviews-section">
+  <div class="container">
+    <div class="section-header center">
+      <span class="section-eyebrow reveal">Testimonials</span>
+      <h2 class="section-title reveal delay-1">What our <em>patients say</em></h2>
+    </div>
+    <div class="reviews-grid reveal">
+      <!--
+        📌 REPLACE REVIEW IMAGES:
+           Change src paths to your actual customer review screenshots
+           e.g. src="images/customer/cus.1.png"
+      -->
+      <img class="review-img" src="images/customer/cus.1.png"  alt="Patient review 1"  onerror="this.src='';this.alt='Review 1'">
+      <img class="review-img" src="images/customer/cus.2.png"  alt="Patient review 2"  onerror="this.src='';this.alt='Review 2'">
+      <img class="review-img" src="images/customer/cus.3.png"  alt="Patient review 3"  onerror="this.src='';this.alt='Review 3'">
+      <img class="review-img" src="images/customer/cus.4.png"  alt="Patient review 4"  onerror="this.src='';this.alt='Review 4'">
+      <img class="review-img" src="images/customer/cus.5.png"  alt="Patient review 5"  onerror="this.src='';this.alt='Review 5'">
+      <img class="review-img" src="images/customer/cus.6.png"  alt="Patient review 6"  onerror="this.src='';this.alt='Review 6'">
+      <img class="review-img" src="images/customer/cus.7.png"  alt="Patient review 7"  onerror="this.src='';this.alt='Review 7'">
+      <img class="review-img" src="images/customer/cus.8.png"  alt="Patient review 8"  onerror="this.src='';this.alt='Review 8'">
+      <img class="review-img" src="images/customer/cus.9.png"  alt="Patient review 9"  onerror="this.src='';this.alt='Review 9'">
+      <img class="review-img" src="images/customer/cus.10.png" alt="Patient review 10" onerror="this.src='';this.alt='Review 10'">
+      <img class="review-img" src="images/customer/cus.11.png" alt="Patient review 11" onerror="this.src='';this.alt='Review 11'">
+      <img class="review-img" src="images/customer/cus.12.png" alt="Patient review 12" onerror="this.src='';this.alt='Review 12'">
+      <img class="review-img" src="images/customer/cus.13.png" alt="Patient review 13" onerror="this.src='';this.alt='Review 13'">
+    </div>
+    <div class="text-center reveal" style="margin-top:2rem;">
+      <a class="btn" href="appointment.html">Book Your Visit</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════
+     SERVICES PREVIEW
+══════════════════════════════ -->
+<section class="services-section">
+  <div class="container">
+    <div class="section-header center">
+      <span class="section-eyebrow reveal">Our Services</span>
+      <h2 class="section-title reveal delay-1">A complete range of <em>dental care</em></h2>
+      <p class="section-sub reveal delay-2">From preventive to cosmetic to restorative — we cover every aspect of your oral health.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal delay-1">
+        <span class="service-num">01</span>
+        <h3>Braces</h3>
+        <p>Corrects the alignment of teeth and bite-related problems using modern bracket and wire systems for a straighter smile.</p>
+        <a class="btn btn-sm btn-ghost" href="appointment.html">Book Now</a>
+      </div>
+      <div class="service-card reveal delay-2">
+        <span class="service-num">02</span>
+        <h3>Crown &amp; Bridges</h3>
+        <p>Prosthetic devices to restore damaged or missing teeth using durable caps anchored securely to adjacent teeth.</p>
+        <a class="btn btn-sm btn-ghost" href="appointment.html">Book Now</a>
+      </div>
+      <div class="service-card reveal delay-3">
+        <span class="service-num">03</span>
+        <h3>Whitening</h3>
+        <p>Professional cosmetic bleaching to remove stains and discoloration, revealing a brilliantly bright, confident smile.</p>
+        <a class="btn btn-sm btn-ghost" href="appointment.html">Book Now</a>
+      </div>
+    </div>
+    <div class="text-center reveal" style="margin-top:2.5rem;">
+      <a class="btn" href="services.html">View All 12 Services</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════
+     PARALLAX SECTION 4 — CTA / CALL TO ACTION
+     📌 REPLACE IMAGE: change url("images/YOUR_CTA_IMAGE.jpg")
+        inside the .parallax-cta rule in css/style.css
+══════════════════════════════════════════════════════ -->
+<section class="parallax-cta">
+  <div class="parallax-overlay overlay-dark"></div>
+  <div class="container cta-content reveal">
+    <h2>We're <em>Open</em> &amp; Accepting Patients</h2>
+    <p>Monday through Saturday &middot; 9:00 AM – 5:00 PM &middot; General Trias, Cavite</p>
+    <div class="cta-actions">
+      <a class="btn" href="appointment.html">Book an Appointment</a>
+      <a class="btn btn-outline" href="contact.html">Get Directions</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════
+     FOOTER
+══════════════════════════════ -->
+<footer>
+  <div class="footer-links container">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+    <a href="appointment.html">Book Appointment</a>
+    <a href="Agreement.html">Terms &amp; Privacy</a>
+  </div>
+  <div class="footer-bottom">&copy; 2026 NewSmile Dental Clinic. All rights reserved.</div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

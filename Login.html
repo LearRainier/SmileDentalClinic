@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — NewSmile Dental Clinic</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+<button class="darkmode" onclick="myFunction()">🌙</button>
+<header>
+  <div class="container nav-container">
+    <div class="logo"><a href="index.html"><img src="images/title-logo.png" alt="NewSmile Dental Clinic"></a></div>
+    <nav>
+      <button class="nav-toggle" aria-label="Toggle nav">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="Login.html" class="active">Login</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="auth-section">
+  <!-- Visual Side -->
+  <div class="auth-visual">
+    <div class="auth-visual-content">
+      <div class="auth-visual-logo">🦷</div>
+      <h2>Welcome to <em>NewSmile</em></h2>
+      <p>Your gateway to managing appointments, viewing your dental history, and staying on top of your oral health — all in one place.</p>
+      <div style="margin-top:2.5rem;display:flex;flex-direction:column;gap:1rem;">
+        <div style="display:flex;align-items:center;gap:0.75rem;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:0.75rem;padding:0.9rem 1.25rem;">
+          <span style="font-size:1.25rem;">📅</span>
+          <div><strong style="display:block;font-size:0.8rem;color:rgba(255,255,255,0.9);">Manage Appointments</strong><span style="font-size:0.75rem;color:rgba(255,255,255,0.55);">Book, reschedule or cancel</span></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:0.75rem;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:0.75rem;padding:0.9rem 1.25rem;">
+          <span style="font-size:1.25rem;">📋</span>
+          <div><strong style="display:block;font-size:0.8rem;color:rgba(255,255,255,0.9);">View Dental Records</strong><span style="font-size:0.75rem;color:rgba(255,255,255,0.55);">Access your treatment history</span></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:0.75rem;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:0.75rem;padding:0.9rem 1.25rem;">
+          <span style="font-size:1.25rem;">🔔</span>
+          <div><strong style="display:block;font-size:0.8rem;color:rgba(255,255,255,0.9);">Get Reminders</strong><span style="font-size:0.75rem;color:rgba(255,255,255,0.55);">Never miss a follow-up</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form Side -->
+  <div class="auth-form-side">
+    <div class="auth-card reveal">
+      <h1>Sign In</h1>
+      <p class="subtitle">Welcome back — enter your details to continue</p>
+      <form>
+        <div class="form-row">
+          <label for="username">Username or Email</label>
+          <input type="text" id="username" required placeholder="juan@example.com">
+        </div>
+        <div class="form-row">
+          <label for="password">Password</label>
+          <input type="password" id="password" required placeholder="Enter your password">
+        </div>
+        <div style="display:flex;justify-content:flex-end;margin-bottom:1.5rem;">
+          <a href="#" style="font-size:0.8rem;color:var(--green-600);">Forgot password?</a>
+        </div>
+        <div class="form-row">
+          <button class="btn" type="submit">Sign In</button>
+        </div>
+        <div class="auth-divider"><span>or continue with</span></div>
+        <div class="form-row">
+          <button type="button" class="btn btn-ghost" onclick="void(0)">
+            <img src="images/icons/facebook.svg" alt="Facebook" style="width:18px;height:18px;"> Sign in with Facebook
+          </button>
+        </div>
+        <p>Don't have an account? <a href="register.html">Create one free</a></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
