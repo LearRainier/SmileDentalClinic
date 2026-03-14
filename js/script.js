@@ -256,8 +256,39 @@ document.addEventListener('DOMContentLoaded', () => {
   const navBtn   = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
   if (navBtn) navBtn.addEventListener('click', () => navLinks?.classList.toggle('open'));
+
+  // closing behaviour: do not collapse nav when parent link has submenu
   document.querySelectorAll('.nav-links a').forEach(a => {
-    a.addEventListener('click', () => navLinks?.classList.remove('open'));
+    a.addEventListener('click', () => {
+      if (!a.nextElementSibling || !a.nextElementSibling.classList.contains('dropdown-content')) {
+        navLinks?.classList.remove('open');
+      }
+    });
+  });
+
+  // mobile submenu toggle + arrow indicator
+  document.querySelectorAll('.nav-links > li').forEach(li => {
+    const link = li.querySelector('a');
+    const submenu = li.querySelector('.dropdown-content');
+    if (submenu && link) {
+      // append arrow marker if not already present
+      if (!link.querySelector('.arrow')) {
+        // remove any stray arrow glyph already in the link text
+        link.textContent = link.textContent.replace(/\s*▾\s*$/, '');
+        const span = document.createElement('span');
+        span.className = 'arrow';
+        span.textContent = ' ▾';
+        link.appendChild(span);
+      }
+      link.addEventListener('click', e => {
+        e.preventDefault(); // keep menu open and toggle submenu
+        li.classList.toggle('open');
+      });
+      // submenu links should still close the top‑level nav
+      submenu.querySelectorAll('a').forEach(sa => {
+        sa.addEventListener('click', () => navLinks?.classList.remove('open'));
+      });
+    }
   });
 
 
